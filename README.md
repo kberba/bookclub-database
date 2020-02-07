@@ -6,9 +6,12 @@ It’s A Hardback Life is a moderately sized book club wanting to switch over fr
 The database will solve the problem of keeping track of which books each club member / group is reading, since with the expansion of the book club there were problems of duplications / general errors in record keeping by hand.
 
 ## Team
-Karen Berba
-Josh Ramsaran
+- Karen Berba
+- Josh Ramsaran
 
 ## Tech Stack
-Node.js
-HTML/CSS/JS
+- Node.js
+- HTML/CSS/JS
+
+## ERD / Schema
+To be added soon!
