@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Add New Book to App Library</title>
+  </head>
+  <body>
+
+    <p class="admin">NOTE: This requires Admin permissions.</p>
+
+    <h1>Add New Book to Library</h1>
+
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+        <fieldset>
+        <legend>Enter Book Info:</legend>
+            <label for="bookAuthor">Author:</label>
+            <input type="text" name="bookAuthor">
+            <br><br>
+            <label for="bookTitle">Title:</label>
+            <input type="text" name="bookTitle">
+            <br><br>
+            <label for="bookGenre">Genre:</label>
+            <input type="text" name="bookGenre">
+            <br><br>
+            <label for="isbn">ISBN:</label>
+            <input type="text" name="isbn">
+            <br><br>
+            <input type="submit">
+
+        </fieldset>
+    </form>
+  </body>
+</html>
