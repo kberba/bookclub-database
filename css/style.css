@@ -6,3 +6,12 @@ h1 {
 p {
   font-family: 'Playfair Display', serif;
 }
+
+.admin {
+  font-family: 'Playfair Display', serif;
+  color: red;
+}
+
+ul {
+  list-style: none;
+}
