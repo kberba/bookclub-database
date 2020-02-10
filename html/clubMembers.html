@@ -5,6 +5,80 @@
     <title>Get Club Members</title>
   </head>
   <body>
-    <h1>Get Club Members</h1>
+    <h1>View Club Members</h1>
+    <!--
+      Form to select which group to return member information from. This would be an admin
+      priviledge, as this table will include name and contact information, which should not
+      be accessible by ordinary users. 
+    -->
+    <form action="" method="get">
+      <label for="group">Enter Group Name:</label>
+      <input type="text" name="group" id="group" required>
+    </form>
+    <!--
+      Placeholder table:
+    -->
+    <table>
+      <thead>
+        <tr>
+          <th>member_id</th>
+          <th>Username</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>jbrews101</td>
+          <td>Johnni</td>
+          <td>Brewer</td>
+          <td>johnni.brewer@example.com<br></td>
+          <td>(609) 242-9871</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>hoppin_to_the_kins</td>
+          <td>Wesley</td>
+          <td>Hopkins</td>
+          <td>wesley.hopkins@example.com</td>
+          <td>(105)-837-6450</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>emergencyCPRice</td>
+          <td>Cecil</td>
+          <td>Price</td>
+          <td>cecil.price@example.com</td>
+          <td>(229)-879-0327</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>bigHart</td>
+          <td>Celina</td>
+          <td>Hart</td>
+          <td>hart.celina@example.com</td>
+          <td>(952)-896-6086</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>T-Cluvsdogs</td>
+          <td>Tara</td>
+          <td>Carpenter</td>
+          <td>carpenter.tara@example.com</td>
+          <td>(391)-221-2354</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>tamtam</td>
+          <td>Tammy</td>
+          <td>Henderson</td>
+          <td>henderson.tammy@example.com</td>
+          <td>(117)-069-3011</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
