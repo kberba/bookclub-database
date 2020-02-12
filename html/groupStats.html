@@ -6,5 +6,33 @@
   </head>
   <body>
     <h1>Show Club Group Stats</h1>
+
+    <form class="" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+      <fieldset>
+        <legend>Search by</legend>
+        <br>
+
+        <fieldset>
+          <legend>Group Info</legend>
+          <br>
+          Group ID: <br>
+          <input type="text" name="groupID" value="123456"><br>
+
+          <br>
+          OR <br>
+          <br>
+
+          Group Name: <br>
+          <input type="text" name="groupName" value="Club Group"><br>
+
+          <br>
+          Filter by: <br>
+
+          <input type="radio" name="filter" value="" checked=checked> Show all <br>
+          <input type="radio" name="filter" value=""> Number of Members <br>
+          <input type="radio" name="filter" value=""> Number of Meetings <br>
+          <br>
+          <input type="submit" name="" value="Submit">
+        </fieldset>
   </body>
 </html>
