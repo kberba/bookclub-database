@@ -21,8 +21,13 @@
             <label for="bookTitle">Title:</label>
             <input type="text" name="bookTitle" id="bookTitle">
             <br><br>
-            <label for="bookGenre">Genre:</label>
-            <input type="text" name="bookGenre" id="bookGenre">
+            <label for="genreDrop">Genre:
+              <select name=genreDrop>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Reference">Reference</option>
+                <option value="Young Adult">Young Adult</option>
+              </select>
+            </label>
             <br><br>
             <label for="isbn">ISBN:</label>
             <input type="text" name="isbn" id="isbn">
@@ -31,5 +36,8 @@
 
         </fieldset>
     </form>
+
+    <p>This allows the Admins to add a new book to the list of available books to read. </p>
+
   </body>
 </html>

@@ -1,0 +1,34 @@
+body {
+  background-image: url('../images/000011280003.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p, h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.white {
+  color: white;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+div.transbox h2 {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
