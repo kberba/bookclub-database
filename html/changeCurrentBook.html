@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Change Club's Current Book</title>
+  </head>
+  <body>
+
+    <p class="admin">NOTE: This requires Admin permissions.</p>
+
+    <h1>Change Club's Current Book</h1>
+
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+        <fieldset>
+        <legend>Select Group:</legend>
+            <select name="group" id="select-group">
+                <option value="">--Dynamically Pull Groups Here--</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select New Book:</legend>
+                <select name="newbook" id="select-newbook" disabled>
+                    <option value="">--Disabled Until Group is Selected - Will Show Books From the Group's Genre--</option>
+                </select>
+            </fieldset>
+
+    </form>
+
+    <p>Allows a group admin to change the book a club is currently reading. The dropdown list of books is governed by the genre of the club selected.</p>
+
+  </body>
+</html>
