@@ -15,6 +15,41 @@
   <!--link rel="stylesheet" href="stylesheet.css" type="text/css" (to be added later)-->
   </head>
   <body>
+      <!--Nav Bar SOURCE: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+    <!--Modified to fit our application-->
+    <div class="navbar">
+        <a href="./index">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Users
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./addClubMember.html">Sign Up!</a>
+            <a href="joinGroup.html">Join a Group!</a>
+            <a href="manageMemberAccount.html">Manage Your Account!</a>
+            <a href="viewCatalog.html">View the Library!</a>
+            <a href="viewGroups.html">See all Available Groups!</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Admin
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="addClubGroup.html">Add New Club</a>
+            <a href="attendanceStats.html">View Attendence Stats</a>
+            <a href="addBook.html">Add Book to Library</a>
+            <a href="deleteMember.html">Delete Member</a>
+            <a href="groupInfo.html">View Group Info</a>
+            <a href="groupStats.html">View Group Stats</a>
+            <a href="recordMeeting.html">Record Meeting</a>
+            <a href="groupMeetingInfo.html">View Meeting Info</a>
+            <a href="recordAttendance.html">Update Attendence</a>
+          </div>
+        </div>
+      </div>
+      <!--End Nav Bar-->
+      
     <h1>View Reading Catalog</h1>
     <table>
         <!--Placeholder table. Once backend implmentation is available, table will be
