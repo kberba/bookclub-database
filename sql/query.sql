@@ -10,6 +10,9 @@ SELECT * FROM club_group;
 SELECT * FROM club_group INNER JOIN genre ON club_group.genre = genre.genre_id WHERE genre_name = :genre_name_INPUT;
 SELECT * FROM genre;
 SELECT * FROM club_member;
+SELECT * FROM meeting;
+SELECT * FROM attendance;
+SELECT * FROM attendance INNER JOIN club_member ON attendance.member_id = club_member.member_id WHERE username = :username_INPUT;
 
 
 /* INSERT queries */
@@ -18,9 +21,11 @@ INSERT INTO club_member (username, first_name, last_name, email, phone_num) VALU
 INSERT INTO genre (genre_id, genre_name) VALUES (:genre_id_INPUT, :genre_name_INPUT);
 INSERT INTO club_group (group_name, book_id, genre, administrator) VALUES (:group_name_INPUT, :book_id_INPUT, :genre_INPUT, :administrator_INPUT);
 INSERT INTO meeting (time_stamp, group_id) VALUES (:time_stamp_INPUT, :group_id_INPUT);
-
+INSERT INTO attendance (meeting_id, member_id) VALUES (:meeting_id_INPUT, :member_id_INPUT);
+INSERT INTO group_membership (group_id, member_id) VALUES (:group_id_INPUT), :member_id_INPUT);
 
 /* UPDATE queries */
+UPDATE attendance SET meeting_id = :meeting_id_INPUT, member_id = :member_id_INPUT WHERE member_id = :member_id_INPUT;
 
-
-/* DELETE queries *?
+/* DELETE queries */
+DELETE FROM club_member WHERE username = :username_INPUT;
